@@ -29,7 +29,7 @@
         id="menuButton"
         type="button"
         aria-label="Abrir menu"
-        aria-expanded="false">
+        aria-expanded="false" aria-controls="navMenu">
         <span></span>
         <span></span>
       </button>
@@ -63,22 +63,15 @@
 
       <div class="hero-copy">
 
-        <div class="availability reveal">
-          <span></span>
-          Disponível para projetos
-        </div>
-
         <h1 class="display reveal delay-1">
-          Quem sou eu
+          Kauane Sampaio
         </h1>
 
         <div class="hero-bottom reveal delay-2">
 
           <p>
-            Olá! Sou Kauane, tenho 18 anos e sou formada em Informática para
-            Internet. Tenho paixão pela união entre tecnologia, animações e
-            design visual. Meu foco é desenvolver interfaces criativas e
-            visualmente leves.
+            Meu trabalho vive no encontro entre o pensamento visual e a curiosidade técnica. Gosto de transformar ideias em interfaces simples, criativas e funcionais.
+
           </p>
 
           <a
@@ -95,10 +88,6 @@
       <div class="hero-art reveal delay-3">
 
         <div class="cyan-circle"></div>
-
-        <span class="design-tag">
-          design &lt;3 code
-        </span>
 
         <div
           class="cat-float"
@@ -216,43 +205,34 @@
       <div class="about-card-wrap">
 
 
-        <div class="about-card">
-
-          <span class="big-letter display">
-            M
-          </span>
-
-          <div class="since">
-            design<br>
-            & código
-          </div>
-
-          <span class="pixel">
-            pixel por pixel
-          </span>
-
-        </div>
+        <div class="about-card about-portrait">
+  <img src="imagens/sobre-mim-sem-balao.png" alt="Avatar ilustrado de Kauane na seção Sobre mim" loading="lazy">
+  <svg class="hello-bubble" viewBox="0 0 240 220" role="img" aria-label="Oi!">
+    <path d="M28 151C-5 126 5 67 42 39C80 10 147 10 193 38C229 59 244 96 228 129C211 163 153 174 104 162L49 205L59 165Z" fill="#f4f0e6" stroke="#172b65" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M50 70L63 77M69 51L77 65M94 44L96 59" stroke="#08c9df" stroke-width="7" stroke-linecap="round"/>
+    <path d="M58 104H193" stroke="#2146c7" stroke-width="26"/>
+    <text x="124" y="124" text-anchor="middle" fill="#172b65" font-family="Arial, sans-serif" font-size="65" font-weight="800">OI!</text>
+  </svg>
+</div>
 
       </div>
 
       <div class="about-copy">
 
         <h2 class="display">
+          Quem 
 
-          Eu gosto de transformar o “e se?”
-
-          em
 
           <span>
-            “olha só”.
+            Sou eu
           </span>
 
         </h2>
 
         <p>
-          Meu trabalho vive no encontro entre o pensamento visual e a
-          curiosidade técnica. Gosto de transformar ideias em interfaces
-          simples, criativas e funcionais.
+Olá! Sou Kauane, tenho 18 anos e sou formada em Informática para Internet. Tenho paixão pela união entre tecnologia, animações e design visual. Meu foco é desenvolver interfaces criativas e visualmente leves.
+
+
         </p>
 
         <div class="skill-row">
@@ -323,7 +303,7 @@
               Entender o contexto antes de abrir qualquer arquivo.
             </p>
 
-          </article>
+    </article>
 
           <article class="process-card">
 
@@ -340,7 +320,7 @@
               Dar corpo às ideias sem pedir licença para o perfeccionismo.
             </p>
 
-          </article>
+    </article>
 
           <article class="process-card">
 
@@ -357,7 +337,7 @@
               Testar, codar e fazer a coisa funcionar de verdade.
             </p>
 
-          </article>
+    </article>
 
           <article class="process-card">
 
@@ -374,7 +354,7 @@
               Entregar algo pronto para andar com as próprias pernas.
             </p>
 
-          </article>
+    </article>
 
         </div>
 
@@ -402,17 +382,12 @@
             </h2>
 
           </div>
-
-          <p class="section-note">
-            Projetos desenvolvidos para transformar ideias em experiências
-            visuais e funcionais.
-          </p>
-
+          
         </div>
 
    <div class="project-grid">
 
-  <article class="project-card cobalt">
+  <article class="project-card cobalt secret-project">
 
   <div class="project-top">
     <span>01</span>
@@ -420,8 +395,7 @@
   </div>
 
   <div class="project-image">
-    <img src="/imagens/numero_secreto_tela.png" alt="Jogo do Número Secreto"
-    >
+    <img src="imagens/numero-secreto-ilustracao.svg" alt="Ilustração do Jogo do Número Secreto com campo de palpite, botão Chutar e carta com ponto de interrogação" loading="lazy">
   </div>
 
   <div class="project-copy">
@@ -445,33 +419,56 @@
 
 </article>
 
-  <article class="project-card cyan">
+  <article class="project-card cyan tasks-project">
 
     <div class="project-top">
       <span>02</span>
       <small>2026</small>
     </div>
 
-    <div class="project-stamp">
-      <b>FK</b>
-    </div>
-
-    <div class="project-number">
-      02
-    </div>
+    <div class="project-image"><img src="imagens/lista-tarefas-ilustracao.svg" alt="Ilustração da lista de tarefas com atividades concluídas e barra de progresso" loading="lazy"></div>
 
     <div class="project-copy">
 
-      <p>HTML • CSS • JavaScript</p>
+      <p>Web App</p>
 
       <h3 class="display">
-        Fokus
+        Lista de Tarefas
       </h3>
 
       <span>
-        Aplicação baseada na técnica Pomodoro para organizar períodos
-        de foco e descanso, com temporizador, música e interações.
+        Aplicação para organizar as tarefas do dia a dia, permitindo adicionar, marcar como concluídas e excluir atividades.
       </span>
+
+      <a
+        href="https://projeto-list-gamma.vercel.app/"
+        target="_blank"
+      >
+        Ver projeto ↗
+      </a>
+
+    </div>
+  </article>
+
+
+  <article class="project-card ink eco-project">
+
+    <div class="project-top">
+      <span>03</span>
+      <small>2025</small>
+    </div>
+
+    <div class="project-image"><img src="imagens/ecoguia-ilustracao.svg" alt="Ilustração do EcoGuia com mapa, pontos de avistamento e folha representando a biodiversidade" loading="lazy"></div>
+
+    <div class="project-copy">
+
+      <p>TCC • Monitoramento ambiental</p>
+
+      <h3 class="display">
+        EcoGuia
+      </h3>
+
+      <span>Identificação de espécies pela câmera, avistamentos no mapa e alertas ambientais para ajudar a preservar a biodiversidade do Maranhão.</span>
 
       <a
         href="COLOQUE-AQUI-O-LINK-DO-PROJETO"
@@ -484,44 +481,6 @@
 
   </article>
 
-
-  <article class="project-card ink">
-
-    <div class="project-top">
-      <span>03</span>
-      <small>2026</small>
-    </div>
-
-    <div class="project-stamp">
-      <b>RM</b>
-    </div>
-
-    <div class="project-number">
-      03
-    </div>
-
-    <div class="project-copy">
-
-      <p>Web App</p>
-
-      <h3 class="display">
-        RecipeMe
-      </h3>
-
-      <span>
-        Aplicação para encontrar receitas a partir dos ingredientes
-        disponíveis, com filtros e opção de favoritar receitas.
-      </span>
-
-      <a
-        href="COLOQUE-AQUI-O-LINK-DO-PROJETO"
-        target="_blank"
-      >
-        Ver projeto ↗
-      </a>
-
-          </article>
-
         </div>
 
         <div class="project-footer">
@@ -532,6 +491,7 @@
 
         </div>
 
+    </div>
     </section>
 
     <section class="contact" id="contato">

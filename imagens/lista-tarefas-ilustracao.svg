@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+<title>Lista de Tarefas: organização e atividades concluídas</title>
+<rect width="800" height="500" rx="28" fill="#dce8fb"/>
+<circle cx="705" cy="75" r="118" fill="#08c9df" fill-opacity=".16"/>
+<circle cx="70" cy="460" r="125" fill="#2146c7" fill-opacity=".09"/>
+<rect x="79" y="61" width="650" height="389" rx="24" fill="#172b65" fill-opacity=".1"/>
+<rect x="70" y="50" width="650" height="389" rx="24" fill="#fff"/>
+<path d="M94 50H230V439H94C81 439 70 428 70 415V74C70 61 81 50 94 50Z" fill="#f4f7fc"/>
+<rect x="94" y="84" width="28" height="28" rx="7" fill="#2146c7"/>
+<path d="m101 98 5 5 9-11" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="132" y="104" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#172b65">Tarefas</text>
+<rect x="88" y="145" width="124" height="38" rx="10" fill="#dce8fb"/>
+<text x="109" y="170" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#2146c7">Todas</text>
+<text x="109" y="215" font-family="Arial, sans-serif" font-size="14" fill="#395181">Pendentes</text>
+<text x="109" y="258" font-family="Arial, sans-serif" font-size="14" fill="#395181">Concluídas</text>
+<text x="258" y="108" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#172b65">Minhas Tarefas</text>
+<text x="258" y="135" font-family="Arial, sans-serif" font-size="15" fill="#395181">Organize seu dia, do seu jeito.</text>
+<rect x="258" y="158" width="319" height="40" rx="9" stroke="#b4c1e0"/>
+<text x="273" y="183" font-family="Arial, sans-serif" font-size="13" fill="#395181">Adicionar uma nova tarefa...</text>
+<rect x="588" y="158" width="104" height="40" rx="9" fill="#2146c7"/>
+<path d="M640 169V187M631 178H649" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<rect x="258" y="221" width="434" height="52" rx="10" fill="#f4f7fc"/>
+<rect x="274" y="236" width="23" height="23" rx="6" fill="#2146c7"/>
+<path d="m280 247 4 5 8-11" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="313" y="253" font-family="Arial, sans-serif" font-size="16" fill="#395181">Estudar</text>
+<path d="M312 247H371" stroke="#395181" stroke-opacity=".5"/>
+<rect x="258" y="284" width="434" height="52" rx="10" fill="#f4f7fc"/>
+<rect x="274" y="299" width="23" height="23" rx="6" fill="#2146c7"/>
+<path d="m280 310 4 5 8-11" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="313" y="316" font-family="Arial, sans-serif" font-size="16" fill="#395181">Atualizar o portfólio</text>
+<path d="M312 310H452" stroke="#395181" stroke-opacity=".5"/>
+<text x="258" y="369" font-family="Arial, sans-serif" font-size="13" fill="#395181">2 de 2 tarefas concluídas</text>
+<rect x="258" y="382" width="434" height="8" rx="4" fill="#08c9df"/>
+<circle cx="686" cy="412" r="37" fill="#2146c7"/>
+<path d="m669 412 11 11 23-27" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
