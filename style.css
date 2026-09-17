@@ -844,6 +844,23 @@ a {
   width: min(1080px, calc(100% - 40px));
 }
 
+.skills-section .process-heading {
+  position: relative;
+  padding-bottom: 26px;
+  margin-bottom: 46px;
+}
+
+.skills-section .process-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 54px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--blue);
+}
+
 .process-heading h2 span { color: var(--cream); }
 
 .skills-panels {
@@ -863,7 +880,7 @@ a {
   display: flex;
   align-items: flex-start;
   gap: 18px;
-  padding: 0 0 24px;
+  padding: 0 0 28px;
   border-bottom: 2px solid var(--ink);
 }
 
@@ -900,18 +917,20 @@ a {
 .skills-list {
   list-style: none;
   margin: 0;
-  padding: 8px 0 0;
+  padding: 10px 0 0;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 18px;
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .skills-list li {
-  display: block;
-  min-height: 108px;
-  padding: 16px 0 14px;
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  min-height: 70px;
+  padding: 12px 0;
   border-bottom: 1px solid rgba(23, 43, 101, .35);
-  transition: transform .25s ease, color .25s ease;
+  transition: transform .25s ease, color .25s ease, border-color .25s ease;
   animation: skill-item-in .65s ease both;
 }
 
@@ -932,7 +951,7 @@ a {
   content: counter(skill-item, decimal-leading-zero);
   counter-increment: skill-item;
   display: block;
-  margin-bottom: 7px;
+  margin: 0;
   color: var(--blue);
   font-family: var(--font-mono);
   font-size: 11px;
@@ -945,13 +964,15 @@ a {
 
 .skills-list li:hover {
   transform: translateX(7px);
+  border-color: var(--blue);
 }
 
 .skills-list h4 {
+  grid-column: 2;
   margin: 0;
   color: var(--ink);
   font-family: var(--font-display);
-  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  font-size: clamp(1.4rem, 2.1vw, 1.9rem);
   line-height: 1.05;
   text-wrap: balance;
 }
@@ -1282,7 +1303,6 @@ a {
 
 }
 
-/* Captura do projeto Numero Secreto */
 .secret-project {
   display: flex;
   flex-direction: column;
@@ -1318,7 +1338,6 @@ a {
   content: none;
 }
 
-/* Tela real do EcoGuia, extraida do relatorio do TCC */
 .eco-project {
   display: flex;
   flex-direction: column;
@@ -1352,7 +1371,6 @@ a {
   transform: scale(1.02);
 }
 
-/* Ilustracao da Lista de Tarefas */
 .tasks-project {
   display: flex;
   flex-direction: column;
@@ -1538,7 +1556,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--cyan); outline-
   .skills-symbol, .skills-list li { animation: none; }
   .reveal { opacity: 1; transform: none; }
 }
-/* Balao independente do avatar */
 .hello-bubble {
   position: absolute;
   top: 18%;
@@ -1644,4 +1661,142 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--cyan); outline-
   .skills-practice { margin-top: 40px; }
   .skills-examples { gap: 8px; }
   .skill-column { padding: 20px 18px 16px; }
+}
+
+.skills-showcase {
+  position: relative;
+  overflow: hidden;
+  padding: 118px 20px 128px;
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.skills-showcase::before {
+  content: '';
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  right: -170px;
+  top: -190px;
+  border: 2px solid rgba(8, 201, 223, .5);
+  border-radius: 50%;
+}
+
+.skills-showcase-inner {
+  position: relative;
+  z-index: 1;
+  width: min(1160px, calc(100% - 40px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: .75fr 1.25fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.skills-intro {
+  position: sticky;
+  top: 32px;
+}
+
+.skills-kicker {
+  display: block;
+  margin-bottom: 26px;
+  color: var(--cyan);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.skills-intro h2 {
+  margin: 0;
+  font-size: clamp(3.4rem, 6vw, 6rem);
+  line-height: .83;
+}
+
+.skills-intro h2 em {
+  color: var(--cyan);
+  font-style: normal;
+}
+
+.skills-intro p {
+  max-width: 280px;
+  margin: 34px 0 0;
+  color: var(--light-blue);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.skills-catalog {
+  padding-top: 10px;
+}
+
+.skills-catalog-head {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(244, 240, 230, .45);
+  color: var(--cyan);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.skills-catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.catalog-item {
+  min-height: 76px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  border-bottom: 1px solid rgba(180, 193, 224, .28);
+  transition: padding-left .25s ease, border-color .25s ease;
+}
+
+.catalog-item strong {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2vw, 1.65rem);
+  line-height: 1.05;
+}
+
+.catalog-item:hover {
+  padding-left: 9px;
+  border-color: var(--cyan);
+}
+
+@media (max-width: 960px) {
+  .skills-showcase-inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 54px;
+  }
+
+  .skills-intro { position: static; }
+  .skills-intro p { max-width: 520px; }
+}
+
+@media (max-width: 600px) {
+  .skills-showcase {
+    padding: 78px 0 86px;
+  }
+
+  .skills-showcase-inner {
+    width: calc(100% - 36px);
+    gap: 38px;
+  }
+
+  .skills-intro h2 { font-size: clamp(3rem, 16vw, 4.8rem); }
+  .skills-intro p { font-size: 15px; }
+  .skills-catalog-head,
+  .skills-catalog-grid { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .skills-catalog-head span + span { display: none; }
+  .skills-catalog-head span::after { content: ' + jeito de criar'; }
+  .skills-catalog-head span { font-size: 10px; }
+  .catalog-item { min-height: 64px; }
+  .catalog-item strong { font-size: 1.3rem; }
 }
