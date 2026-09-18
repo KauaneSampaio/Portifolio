@@ -404,6 +404,9 @@ a {
 .project-card.cobalt { background: var(--blue); color: var(--cream); }
 .project-card.cyan { background: var(--cyan); color: var(--ink); }
 .project-card.ink { background: var(--ink); color: var(--cream); border-color: var(--cream); }
+.project-card.eco-project h3 {
+  color: var(--cyan);
+}
 .project-top {
   display: flex;
   justify-content: space-between;
@@ -548,10 +551,12 @@ a {
   font-size: clamp(2.8rem, 6vw, 5rem);
   line-height: .9;
   letter-spacing: -.08em;
+  color: var(--cyan);
+  text-shadow: 0 0 18px rgba(8, 201, 223, 0.38);
 }
 
 .ecoguia-header h2 span {
-  color: var(--blue);
+  color: var(--cyan);
 }
 
 .ecoguia-grid {
